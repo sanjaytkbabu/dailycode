@@ -6,17 +6,17 @@
 // “The Daily Byte”, return "etyB yliaD ehT”
 // “civic”, return “civic”
 
-let s:String = 'The Daily Byte';
+let input:string = 'The Daily Byte';
 
-let s2:string[] = s.split("");
-let s3 = new Array<String>(s2.length);
-let j = 0;
-let s4 = new String;
-for(let i = s2.length-1; i>=0; i--){
+let splitArray:string[] = input.split("");
+//let s3 = new Array<String>(s2.length);
+//let j = 0;
+let reverseString:string="";
+for(let i = splitArray.length-1; i>=0; i--){
     //console.log(s2[i])
    // s3[j] = s2[i];
     //j++;
-    s4 = s4.concat(s2[i]);
+    reverseString = reverseString.concat(splitArray[i]);
 
 }
-console.log(s4);
+console.log(reverseString);
