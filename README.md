@@ -1,6 +1,7 @@
 # dailybyte
 dailybyte problems solved
 
+## To run
 
 ### npm i -g typescript
 ### npx tsc
