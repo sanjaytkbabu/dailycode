@@ -61,7 +61,7 @@ const findLongestPrefix = (input: string[]): string => {
 
     // }
 
-    //let allHaveIt = true;
+
 
     for(let i = 0; i< input.length; i++){
         if(input[i].includes(longestPrefix))
@@ -69,7 +69,6 @@ const findLongestPrefix = (input: string[]): string => {
 
         }
         else{
-            //allHaveIt = false;
             longestPrefix = smallestString.substring(0, longestPrefix.length-1)
         }
     }
