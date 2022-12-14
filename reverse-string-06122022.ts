@@ -8,15 +8,24 @@
 
 let input:string = 'The Daily Byte';
 
-let splitArray:string[] = input.split("");
+//let splitArray:string[] = input.split("");
 //let s3 = new Array<String>(s2.length);
 //let j = 0;
 let reverseString:string="";
-for(let i = splitArray.length-1; i>=0; i--){
-    //console.log(s2[i])
-   // s3[j] = s2[i];
-    //j++;
-    reverseString = reverseString.concat(splitArray[i]);
+// for(let i = splitArray.length-1; i>=0; i--){
+//     //console.log(s2[i])
+//    // s3[j] = s2[i];
+//     //j++;
+//     reverseString = reverseString.concat(splitArray[i]);
+
+// }
+
+for(let i = input.length-1; i>=0; i--){
+
+    reverseString = reverseString.concat(input[i]);
 
 }
+
+
+
 console.log(reverseString);
