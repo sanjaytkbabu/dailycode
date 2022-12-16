@@ -6,4 +6,5 @@
 
 //replaceAt, removeAt
 
+//indexof("a",1)
 
