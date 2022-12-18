@@ -1,0 +1,17 @@
+String:
+
+string.slice(0,4)
+
+string.removeChatAt(0)
+
+string.replace(0, "")
+
+replaceAt, removeAt
+
+indexof("a",1)
+
+Number:
+    Math.trunc() (truncate fractional part, also see below)
+    Math.floor() (round down)
+    Math.ceil() (round up)
+    Math.round() (round to nearest integer)
