@@ -10,6 +10,8 @@ dailybyte problems solved
 ### npm i -g typescript
 ### npx tsc
 ### npm install -g ts-node
+### tsc --init // To generate tsconfig
+
 
 ## To run
 
