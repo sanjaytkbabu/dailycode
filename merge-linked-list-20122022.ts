@@ -109,3 +109,4 @@ let output = MergeLinkedLists(list1, list2);
 //displayList(list2);
 
 displayList(output);
+export {};
