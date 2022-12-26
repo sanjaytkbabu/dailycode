@@ -26,17 +26,17 @@ function MergeLinkedLists(list1: ListNode, list2: ListNode): ListNode | null {
     let head = output;
 
     function compareList(){
-        if(list1.value<list2.value){
-            head.value = list1.value;
-            list1 = list1.next;
-        }
-        else{
-            head.value = list2.value;
-            list2 = list2.next;
-        }
+    if(list1.value<list2.value)
+    {
+        head.value = list1.value;
+        list1 = list1.next;
     }
-    
-    compareList();
+    else {
+        head.value = list2.value;
+        list2 = list2.next;
+    }
+}
+compareList();
 
     while(list1!=null && list2!=null){
         head.next = new ListNode();
