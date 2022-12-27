@@ -1,5 +1,5 @@
-# dailybyte
-dailybyte problems solved
+# dailybyte and leetcode
+dailybyte.com and leetcode problems solved
 
 ## Requirements
 ### NodeJS
