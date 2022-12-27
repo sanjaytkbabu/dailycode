@@ -12,41 +12,35 @@
 // Input: mat = [[1,2],[3,4]], r = 2, c = 4
 // Output: [[1,2],[3,4]]
 
-
-// function generate(numRows: number): number[][] {
-//    let output = new Array();
-//     for(let i = 0; i < numRows; i++){
-//         let row = new Array(i+1).fill(0);
-//         for(let j = 0; j <= i; j++){
-//             if(j==0 || j==i)
-//             row[j] = 1;
-//             else{
-//                 row[j] = output[i-1][j-1] + output[i-1][j];
-//             }
-            
-//         }
-//         output.push(row);
-//     }
-
-//     return output;
-// };
-
 function matrixReshape(mat: number[][], r: number, c: number): number[][] {
 
     let output = new Array();
 
-    
+    let m = mat.length, n = mat[0].length;
 
-    if(r*c != mat[0].length*mat.length){
+    if (r * c != m * n) {
         return mat;
     }
-        for(let i=0; i<r; i++){
-            let row = new Array(i+1).fill(0);
-            for(let j=0; j<c; j++){
-                row[i][j] = mat[i][j];
+
+    let k = 0;
+
+    let row = new Array(c).fill(0);
+
+    for (let i = 0; i < m; i++) {
+
+        for (let j = 0; j < n; j++) {
+
+            row[k] = mat[i][j];
+            k++;
+            if (k == c) {
+                output.push(row);
+                k = 0;
+                row = new Array(c).fill(0);
             }
-            output.push(row);
+            
+
         }
+    }
 
 
     return output;
@@ -55,14 +49,11 @@ function matrixReshape(mat: number[][], r: number, c: number): number[][] {
 
 
 
-let mat = [[1,2],[3,4]], r = 1, c = 4;
+let mat1 = [[1, 2], [3, 4]], r1 = 1, c1 = 4;
+let mat2 = [[1, 2], [3, 4]], r2 = 2, c2 = 4;
 
-//mat = [[1,2,3,4,5], [1,2,3,4,5]];
-let output = matrixReshape(mat, r, c);
+let output = matrixReshape(mat1, r1, c1);
 
 console.log(output);
 
-//console.log(mat.length + " " + mat[0].length);
-
-
-export{}
+export { };
