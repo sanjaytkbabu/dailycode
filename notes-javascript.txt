@@ -15,3 +15,30 @@ Number:
     Math.floor() (round down)
     Math.ceil() (round up)
     Math.round() (round to nearest integer)
+
+
+array
+
+splice(start, deleteCount, item1)
+const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+// inserts at index 1
+console.log(months);
+// expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(4, 1, 'May');
+// replaces 1 element at index 4
+console.log(months);
+// expected output: Array ["Jan", "Feb", "March", "April", "May"]
+
+//////////////
+let nums1 = [1,2,2,1], nums2 = [2];
+
+
+
+console.log(nums1.join());
+1,2,2,1
+
+num1.concat(nums2);
+1,2,2,1,2
+/////////////
