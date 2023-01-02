@@ -20,23 +20,11 @@ let findFirstUnique = (input: string): number => {
 
 }
 
-
-let findFirstUniqueWithIndexOf = (input: string): number => {
-
-
-    for(let i = 0; i < input.length; i++){
-        if(input.lastIndexOf(input[i]) == i)
-        return i;
-        
-    }
-
-    return -1;
-
-}
-
-
 let input1: string = "abcabd";
 let input2: string = "thedailybyte";
 let input3: string = "developer";
+let input4 = "aabb";
 
-console.log(findFirstUnique(input1));
+console.log(findFirstUnique(input4));
+
+export{};

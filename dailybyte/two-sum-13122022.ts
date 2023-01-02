@@ -9,16 +9,19 @@
 
 
 
-let checkTwoSum = (input: number[], k: number) => {
+let checkTwoSum = (input: number[], k: number): number[] => {
+
+    let output = new Array();
 
     for(let i = 0; i < input.length; i++){
         if(input.includes(k - input[i]) && input.indexOf(k - input[i])!=i){
-            console.log(input[i] + " + " + (k-input[i]))
+            output.push(input[i]);
+            output.push(k - input[i]);
             break;
         }
         
     }
-
+    return output;
 }
 
 checkTwoSum([1, 3, 8, 2], 10);
