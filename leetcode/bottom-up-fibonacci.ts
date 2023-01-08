@@ -16,4 +16,4 @@ function getFibonacciBottomUp(n: number): number {
 
 }
 
-console.log(getFibonacciBottomUp(2).toString())
+console.log(getFibonacciBottomUp(3).toString())

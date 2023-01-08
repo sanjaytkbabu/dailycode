@@ -1,0 +1,13 @@
+
+in-order
+
+dbe,a,fcg
+
+pre-order
+
+a,bde,cfg
+
+post-order
+
+deb,fgc,a
+

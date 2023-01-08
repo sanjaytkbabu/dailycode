@@ -1,6 +1,6 @@
 
 
-let n = 10;
+let n = 3;
 
 let memo = Array(n).fill(0);
 
@@ -22,3 +22,5 @@ function getFibonacciMemo(n: number, memo: number[]): number {
 
 
 console.log(getFibonacciMemo(n, memo).toString());
+
+export{}
