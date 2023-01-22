@@ -107,6 +107,7 @@ function insertHeightBalancedBST(input: number[]){
 
     }
 //console.log(root);
+return root;
 }
 
 function levelOrderTraversal(root: TreeNode): number[]{
