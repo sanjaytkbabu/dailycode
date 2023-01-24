@@ -8,9 +8,9 @@ dailybyte.com and leetcode problems solved
 ## To setup typescript and compiler
 
 ### npm i -g typescript
-### npx tsc
-### npm install -g ts-node
 ### tsc --init // To generate tsconfig
+### npm install -g ts-node
+
 
 
 ## To run
